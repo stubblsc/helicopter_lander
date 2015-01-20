@@ -14,6 +14,9 @@
 		A023D2801A6EF9EA003A20C0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A023D27F1A6EF9EA003A20C0 /* Images.xcassets */; };
 		A023D2831A6EF9EA003A20C0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A023D2811A6EF9EA003A20C0 /* LaunchScreen.xib */; };
 		A023D28F1A6EF9EA003A20C0 /* helicopter_landerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A023D28E1A6EF9EA003A20C0 /* helicopter_landerTests.m */; };
+		A07255F61A6EFBAB003CA162 /* Helicopter.m in Sources */ = {isa = PBXBuildFile; fileRef = A07255F51A6EFBAB003CA162 /* Helicopter.m */; };
+		A07255F91A6F060E003CA162 /* heli.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A07255F81A6F060E003CA162 /* heli.jpg */; };
+		A07255FC1A6F0893003CA162 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07255FB1A6F0893003CA162 /* GameViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		A023D2881A6EF9EA003A20C0 /* helicopter_landerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = helicopter_landerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A023D28D1A6EF9EA003A20C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A023D28E1A6EF9EA003A20C0 /* helicopter_landerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = helicopter_landerTests.m; sourceTree = "<group>"; };
+		A07255F41A6EFBAB003CA162 /* Helicopter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helicopter.h; sourceTree = "<group>"; };
+		A07255F51A6EFBAB003CA162 /* Helicopter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helicopter.m; sourceTree = "<group>"; };
+		A07255F81A6F060E003CA162 /* heli.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = heli.jpg; sourceTree = "<group>"; };
+		A07255FA1A6F0893003CA162 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		A07255FB1A6F0893003CA162 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,9 @@
 		A023D2711A6EF9EA003A20C0 /* helicopter_lander */ = {
 			isa = PBXGroup;
 			children = (
+				A07255F71A6F060E003CA162 /* assets */,
+				A07255F41A6EFBAB003CA162 /* Helicopter.h */,
+				A07255F51A6EFBAB003CA162 /* Helicopter.m */,
 				A023D2761A6EF9EA003A20C0 /* AppDelegate.h */,
 				A023D2771A6EF9EA003A20C0 /* AppDelegate.m */,
 				A023D2791A6EF9EA003A20C0 /* ViewController.h */,
@@ -89,6 +100,8 @@
 				A023D27F1A6EF9EA003A20C0 /* Images.xcassets */,
 				A023D2811A6EF9EA003A20C0 /* LaunchScreen.xib */,
 				A023D2721A6EF9EA003A20C0 /* Supporting Files */,
+				A07255FA1A6F0893003CA162 /* GameViewController.h */,
+				A07255FB1A6F0893003CA162 /* GameViewController.m */,
 			);
 			path = helicopter_lander;
 			sourceTree = "<group>";
@@ -117,6 +130,15 @@
 				A023D28D1A6EF9EA003A20C0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A07255F71A6F060E003CA162 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				A07255F81A6F060E003CA162 /* heli.jpg */,
+			);
+			name = assets;
+			path = ../../assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A023D27E1A6EF9EA003A20C0 /* Main.storyboard in Resources */,
+				A07255F91A6F060E003CA162 /* heli.jpg in Resources */,
 				A023D2831A6EF9EA003A20C0 /* LaunchScreen.xib in Resources */,
 				A023D2801A6EF9EA003A20C0 /* Images.xcassets in Resources */,
 			);
@@ -219,8 +242,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A07255FC1A6F0893003CA162 /* GameViewController.m in Sources */,
 				A023D27B1A6EF9EA003A20C0 /* ViewController.m in Sources */,
 				A023D2781A6EF9EA003A20C0 /* AppDelegate.m in Sources */,
+				A07255F61A6EFBAB003CA162 /* Helicopter.m in Sources */,
 				A023D2751A6EF9EA003A20C0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +439,7 @@
 				A023D2941A6EF9EA003A20C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A023D2951A6EF9EA003A20C0 /* Build configuration list for PBXNativeTarget "helicopter_landerTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +448,7 @@
 				A023D2971A6EF9EA003A20C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

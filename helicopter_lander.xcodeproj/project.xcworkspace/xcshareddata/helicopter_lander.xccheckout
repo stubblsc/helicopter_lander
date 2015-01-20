@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C0D4DD7E-3C54-4325-B97C-301E482C98F3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>helicopter_lander</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E3C3F95A13DF14A72CF245724588A64A5119AB7A</key>
+		<string>https://github.com/stubblsc/helicopter_lander</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>helicopter_lander.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E3C3F95A13DF14A72CF245724588A64A5119AB7A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/stubblsc/helicopter_lander</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E3C3F95A13DF14A72CF245724588A64A5119AB7A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E3C3F95A13DF14A72CF245724588A64A5119AB7A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>helicopter_lander</string>
+		</dict>
+	</array>
+</dict>
+</plist>
