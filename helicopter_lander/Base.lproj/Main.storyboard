@@ -45,10 +45,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="OFq-WK-xbq">
             <objects>
-                <viewController id="caM-wT-Odn" sceneMemberID="viewController">
+                <viewController id="caM-wT-Odn" customClass="GameViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qlk-9I-gA4"/>
                         <viewControllerLayoutGuide type="bottom" id="L7h-ML-cLm"/>
@@ -56,27 +56,22 @@
                     <view key="view" contentMode="scaleToFill" id="e2h-Tb-ed1">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zqa-4d-2Oe">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <gestureRecognizers/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dmt-uz-tTu">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
                                 </variation>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="uu5-yw-zKK" appends="YES" id="RBl-88-GIp"/>
-                                </connections>
-                            </view>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="Zqa-4d-2Oe"/>
+                                <exclude reference="Dmt-uz-tTu"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="Zqa-4d-2Oe"/>
+                                <include reference="Dmt-uz-tTu"/>
                             </mask>
                         </variation>
                     </view>

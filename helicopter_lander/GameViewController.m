@@ -10,6 +10,9 @@
 
 @interface GameViewController ()
 
+@property UIImage *helicopter;
+@property UIImageView *playerView;
+
 @end
 
 @implementation GameViewController
@@ -17,11 +20,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.helicopter = [UIImage imageNamed: @"heli.jpg"];
+    
+    self.playerView = [[UIImageView alloc] initWithImage:self.helicopter];
+    srand(time(NULL));
+    int x_coord = rand() % 300;
+    self.playerView.frame = CGRectMake(x_coord,10,32,32);//(50,400, 32,32);
+    [self.view addSubview: self.playerView];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)drop{
+    for(int i=0; i<100; i++){
+        CGRect oldFrame = self.playerView.frame;
+        CGRect newFrame = CGRectMake(oldFrame.origin.x, oldFrame.origin.y + 1, 32, 32);
+        self.playerView.frame = newFrame;
+    }
 }
 
 /*

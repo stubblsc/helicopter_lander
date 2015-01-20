@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <stdlib.h>
+#import <time.h>
 
 @interface GameViewController : UIViewController
-
-    UIAccelerometer *accelerometer;
 
 @end
