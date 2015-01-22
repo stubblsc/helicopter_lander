@@ -7,6 +7,7 @@
 //
 
 #import "GameViewController.h"
+#import "Helicopter.h"
 
 @interface GameViewController ()
 
@@ -20,13 +21,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.helicopter = [UIImage imageNamed: @"heli.jpg"];
-    
-    self.playerView = [[UIImageView alloc] initWithImage:self.helicopter];
     srand(time(NULL));
     int x_coord = rand() % 300;
     self.playerView.frame = CGRectMake(x_coord,10,32,32);//(50,400, 32,32);
     [self.view addSubview: self.playerView];
+    self.helicopter = [[[Helicopter alloc] init] initHelicopter:self.view];
 }
 
 - (void)didReceiveMemoryWarning {

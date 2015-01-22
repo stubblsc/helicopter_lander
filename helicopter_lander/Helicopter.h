@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreMotion/CoreMotion.h>
+#import <UIKit/UIKit.h>
 
 @interface Helicopter : NSObject
 
@@ -15,13 +16,12 @@
 @property bool has_landed;
 @property CMAttitude *att;
 @property double roll;
+@property UIView *gameView;
+@property CGRect heliRect;
+@property UIImageView *player;
+@property NSTimer *heli_timer;
 
--(void) set_position: (int) x : (int) y;
-
+-(Helicopter *) initHelicopter: (UIView *) gameView;
 -(void) drop;
-
--(void) fly;
-
--(void) move_horiz;
 
 @end
