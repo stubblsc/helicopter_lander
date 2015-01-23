@@ -11,7 +11,7 @@
 
 @interface GameViewController ()
 
-@property UIImage *helicopter;
+@property Helicopter *helicopter;
 @property UIImageView *playerView;
 
 @end
@@ -33,12 +33,12 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)drop{
-    for(int i=0; i<100; i++){
-        CGRect oldFrame = self.playerView.frame;
-        CGRect newFrame = CGRectMake(oldFrame.origin.x, oldFrame.origin.y + 1, 32, 32);
-        self.playerView.frame = newFrame;
-    }
+- (IBAction)moveLeft:(id)sender {
+    [self.helicopter moveLeft];
+}
+
+- (IBAction)moveRight:(id)sender {
+    [self.helicopter moveRight];
 }
 
 /*

@@ -12,4 +12,9 @@
 
 @interface GameViewController : UIViewController
 
+- (IBAction)moveLeft:(id)sender;
+
+- (IBAction)moveRight:(id)sender;
+
+
 @end

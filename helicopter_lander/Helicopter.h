@@ -23,5 +23,7 @@
 
 -(Helicopter *) initHelicopter: (UIView *) gameView;
 -(void) drop;
+-(void) moveLeft;
+-(void) moveRight;
 
 @end
