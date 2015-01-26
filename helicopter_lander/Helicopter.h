@@ -12,7 +12,7 @@
 
 @interface Helicopter : NSObject
 
-@property int x_pos, y_pos;
+@property int x_pos, y_pos, score;
 @property bool has_landed;
 @property CMAttitude *att;
 @property double roll;
@@ -25,5 +25,6 @@
 -(void) drop;
 -(void) moveLeft;
 -(void) moveRight;
+-(void) fly;
 
 @end

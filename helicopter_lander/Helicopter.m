@@ -11,6 +11,8 @@
 
 @implementation Helicopter
 
+@synthesize score;
+
 -(Helicopter *) initHelicopter:(UIView *)gameView{
     self.gameView = gameView;
     
@@ -21,27 +23,22 @@
     self.heliRect = CGRectMake(x_coord, 10, 32, 32);
     self.player = [[UIImageView alloc] initWithFrame: self.heliRect];
     [self.player setImage: helicopterImage];
-    //helicopterView.frame = CGRectMake(x_coord,10,32,32);
     
     [self.gameView addSubview: self.player];
-    self.heli_timer = [NSTimer scheduledTimerWithTimeInterval:.03
-                                                       target:self
-                                                     selector:@selector(drop)
-                                                     userInfo:nil
-                                                      repeats:YES];
+    
     return self;
 }
 
 -(void) drop
 {
-    self.heliRect = CGRectOffset(self.heliRect, 0, 2);
+    self.heliRect = CGRectOffset(self.heliRect, 0, 3);
     self.player.frame = self.heliRect;
-    
-    if(self.heliRect.origin.y > 635){
-        [self.heli_timer invalidate];
-        self.heli_timer = NULL;
-        
-    }
+}
+
+-(void) fly
+{
+    self.heliRect = CGRectOffset(self.heliRect, 0, -2);
+    self.player.frame = self.heliRect;
 }
 
 -(void) moveLeft{

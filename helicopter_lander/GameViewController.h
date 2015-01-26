@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <stdlib.h>
 #import <time.h>
+#import "Helicopter.h"
+#import "Target.h"
 
 @interface GameViewController : UIViewController
 
@@ -16,5 +18,10 @@
 
 - (IBAction)moveRight:(id)sender;
 
+-(IBAction)quit_app:(id)sender;
+-(IBAction)touchRelease:(id)sender;
+
+-(void) detect_collision;
+-(void) quit;
 
 @end
